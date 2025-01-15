@@ -1,14 +1,18 @@
 import React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "next-themes"
+import { Beth_Ellen } from "next/font/google"
 import "./globals.css"
+import { ThemeProvider } from "@/components/ThemeProvider"
 
-const inter = Inter({ subsets: ["latin"] })
+const bethEllen = Beth_Ellen({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: "Jeremy Saunders",
-  description: "Jeremy Saunders - Official Website",
+  title: "Jeremy Saunders | Singer-Songwriter",
+  description: "Official website of Jeremy Saunders - Singer, Songwriter, and Performer",
 }
 
 export default function RootLayout({
@@ -18,8 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="data-theme" defaultTheme="light" enableSystem={false}>
+      <body className={bethEllen.className}>
+        <ThemeProvider>
           {children}
         </ThemeProvider>
       </body>

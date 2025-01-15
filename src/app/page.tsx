@@ -17,7 +17,7 @@ export default function Home() {
     <main className="min-h-screen fade-in">
       <Header />
       
-      <div className="container mx-auto px-10 pt-8 flex flex-col items-center gap-12">
+      <div className="container mx-auto px-10 pt-8 flex flex-col items-center gap-8">
         {/* Album Cover */}
         <div className="w-full max-w-[500px] flex-shrink-0 overflow-hidden rounded-lg">
           <div className="relative aspect-square w-full transition-transform duration-300 hover:scale-105">
@@ -32,18 +32,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Social Icons - slightly smaller */}
-        <div className="flex items-center gap-10">
+        {/* Social Icons */}
+        <div className="flex items-center gap-8">
           {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
             <Link
               key={label}
               href={href}
-              className="hover:opacity-80 transition-opacity p-2"
+              className="hover:opacity-80 transition-opacity"
               aria-label={label}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon className="w-[26px] h-[26px] text-[var(--text)]" />
+              <Icon className="w-5 h-5 text-[var(--text)]" />
             </Link>
           ))}
         </div>
