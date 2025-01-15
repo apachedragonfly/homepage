@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Header Background -->
+    <rect width="800" height="80" fill="#ffffff" stroke="#dee2e6"/>
+    
+    <!-- Title (Left-aligned version) -->
+    <rect x="40" y="20" width="200" height="40" rx="4" fill="#dee2e6"/>
+    
+    <!-- Social Media Icons -->
+    <g transform="translate(500, 20)">
+        <!-- Instagram -->
+        <circle cx="0" cy="20" r="15" fill="#ced4da"/>
+        <!-- TikTok -->
+        <circle cx="50" cy="20" r="15" fill="#ced4da"/>
+        <!-- X -->
+        <circle cx="100" cy="20" r="15" fill="#ced4da"/>
+        <!-- GitHub -->
+        <circle cx="150" cy="20" r="15" fill="#ced4da"/>
+        <!-- YouTube -->
+        <circle cx="200" cy="20" r="15" fill="#ced4da"/>
+    </g>
+    
+    <!-- Album Cover Placeholder -->
+    <g transform="translate(40, 120)">
+        <rect width="400" height="400" rx="8" fill="#dee2e6" stroke="#ced4da" stroke-width="2"/>
+        <line x1="0" y1="0" x2="400" y2="400" stroke="#ced4da" stroke-width="2"/>
+        <line x1="400" y1="0" x2="0" y2="400" stroke="#ced4da" stroke-width="2"/>
+    </g>
+    
+    <!-- Content Area Placeholder -->
+    <g transform="translate(480, 120)">
+        <!-- Content blocks suggestion -->
+        <rect width="280" height="60" rx="4" fill="#e9ecef"/>
+        <rect y="80" width="280" height="60" rx="4" fill="#e9ecef"/>
+        <rect y="160" width="280" height="60" rx="4" fill="#e9ecef"/>
+    </g>
+</svg>

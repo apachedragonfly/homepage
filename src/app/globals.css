@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme='light'] {
+  --background: #AAC6D2;
+  --text: #000000;
+}
+
+[data-theme='dark'] {
+  --background: #01030F;
+  --text: #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  transition: background-color 0.2s ease;
+} 
