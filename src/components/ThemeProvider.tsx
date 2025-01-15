@@ -9,21 +9,13 @@ type ThemeContextType = {
   toggleTheme: () => void
 }
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
+const ThemeContext = createContext<ThemeContextType | null>(null)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark")
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as Theme
-    if (savedTheme) {
-      setTheme(savedTheme)
-    }
-  }, [])
+  const [theme, setTheme] = useState<Theme>("light")
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme)
-    localStorage.setItem("theme", theme)
   }, [theme])
 
   const toggleTheme = () => {
@@ -37,7 +29,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   )
 }
 
-export const useTheme = () => {
+export function useTheme() {
   const context = useContext(ThemeContext)
   if (!context) throw new Error("useTheme must be used within ThemeProvider")
   return context

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-[data-theme='light'] {
+:root {
   --background: #AAC6D2;
   --text: #000000;
 }
