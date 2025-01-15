@@ -13,11 +13,11 @@ type SocialLink = {
 }
 
 const SOCIAL_LINKS: SocialLink[] = [
-  { icon: FaInstagram, href: "#", label: "Instagram" },
-  { icon: FaTiktok, href: "#", label: "TikTok" },
-  { icon: FaXTwitter, href: "#", label: "X" },
-  { icon: FaGithub, href: "#", label: "GitHub" },
-  { icon: FaYoutube, href: "#", label: "YouTube" },
+  { icon: FaInstagram, href: "https://www.instagram.com/jeremyspictures", label: "Instagram" },
+  { icon: FaTiktok, href: "https://www.tiktok.com/@jeremystoks", label: "TikTok" },
+  { icon: FaXTwitter, href: "https://www.x.com/jeremyonX", label: "X" },
+  { icon: FaGithub, href: "https://github.com/apachedragonfly", label: "GitHub" },
+  { icon: FaYoutube, href: "https://www.youtube.com/@jeremysaunders", label: "YouTube" },
 ]
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         {/* Social Icons - slightly larger */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-6">
           {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
             <Link
               key={label}
@@ -51,7 +51,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon className="w-[28px] h-[28px] text-[var(--text)]" />
+              <Icon className="w-[24px] h-[24px] text-[var(--text)]" />
             </Link>
           ))}
         </div>
