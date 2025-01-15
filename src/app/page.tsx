@@ -14,7 +14,7 @@ const SOCIAL_LINKS = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen fade-in">
       <Header />
       
       <div className="container mx-auto px-10 pt-8 flex flex-col items-center gap-8">
@@ -43,7 +43,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon className="w-5 h-5 dark:text-[#FFFFFF] text-[#000000]" />
+              <Icon className="w-5 h-5 text-[var(--text)]" />
             </Link>
           ))}
         </div>
