@@ -17,7 +17,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   { icon: FaTiktok, href: "https://www.tiktok.com/@jeremystoks", label: "TikTok" },
   { icon: FaXTwitter, href: "https://www.x.com/jeremyonX", label: "X" },
   { icon: FaGithub, href: "https://github.com/apachedragonfly", label: "GitHub" },
-  { icon: FaYoutube, href: "https://www.youtube.com/@jeremysaunders", label: "YouTube" },
+  { icon: FaYoutube, href: "https://www.youtube.com/@jeremycraigsaunders", label: "YouTube" },
 ]
 
 export default function Home() {
