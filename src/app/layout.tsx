@@ -11,8 +11,8 @@ const bethEllen = Beth_Ellen({
 })
 
 export const metadata: Metadata = {
-  title: "Jeremy Saunders | Singer-Songwriter",
-  description: "Official website of Jeremy Saunders - Singer, Songwriter, and Performer",
+  title: "Jeremy Craig Saunders | Official",
+  description: "Official website of Jeremy Craig Saunders - Singer, Songwriter, and Performer",
 }
 
 export default function RootLayout({
