@@ -18,7 +18,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   { icon: FaXTwitter, href: "https://www.x.com/jeremyonX", label: "X" },
   { icon: FaYoutube, href: "https://www.youtube.com/@jeremycraigsaunders", label: "YouTube" },
   { icon: FaSpotify, href: "https://open.spotify.com/artist/6LgLJCfIgQ5VDL8J9F1sfv?si=sSQE05U3THStGVu0FuQkeg", label: "Spotify" },
-  { icon: FaMusic, href: "https://music.apple.com/us/artist/jeremy-saunders/166666666666666666666666666666666", label: "Apple Music" },
+  { icon: FaMusic, href: "https://music.apple.com/ca/artist/jeremy-craig-saunders/1715078505", label: "Apple Music" },
 ]
 
 export default function Home() {
