@@ -3,7 +3,7 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Image from "next/image"
 import Link from "next/link"
-import { FaInstagram, FaTiktok, FaXTwitter, FaGithub, FaYoutube } from "react-icons/fa6"
+import { FaInstagram, FaTiktok, FaXTwitter, FaGithub, FaYoutube, FaSpotify, FaMusic } from "react-icons/fa6"
 import type { IconType } from 'react-icons'
 
 type SocialLink = {
@@ -16,8 +16,9 @@ const SOCIAL_LINKS: SocialLink[] = [
   { icon: FaInstagram, href: "https://www.instagram.com/jeremyspictures", label: "Instagram" },
   { icon: FaTiktok, href: "https://www.tiktok.com/@jeremystoks", label: "TikTok" },
   { icon: FaXTwitter, href: "https://www.x.com/jeremyonX", label: "X" },
-  { icon: FaGithub, href: "https://github.com/apachedragonfly", label: "GitHub" },
   { icon: FaYoutube, href: "https://www.youtube.com/@jeremycraigsaunders", label: "YouTube" },
+  { icon: FaSpotify, href: "https://open.spotify.com/artist/6LgLJCfIgQ5VDL8J9F1sfv?si=sSQE05U3THStGVu0FuQkeg", label: "Spotify" },
+  { icon: FaMusic, href: "https://music.apple.com/us/artist/jeremy-saunders/166666666666666666666666666666666", label: "Apple Music" },
 ]
 
 export default function Home() {

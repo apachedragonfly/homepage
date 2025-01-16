@@ -15,7 +15,7 @@ const Header = () => {
     <header className="w-full h-16 bg-transparent pt-4">
       <div className="max-w-7xl mx-auto px-8 h-full flex justify-center items-center">
         <h1 className="text-[28px] text-[var(--text)]">
-          Jeremy Saunders
+          Jeremy Craig Saunders
         </h1>
       </div>
     </header>
